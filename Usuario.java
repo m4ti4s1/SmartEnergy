@@ -49,6 +49,22 @@ class Usuario {
     public void addDispositivo(Dispositivo dispositivo) {
         dispositivos.add(dispositivo);
     }
+
+    public void removeDispositivo(Dispositivo dispositivo) {
+        dispositivos.remove(dispositivo);
+    }
+
+    public void listaDispositivos() {
+        ArrayList<String> dispositivosLista = new ArrayList<>();
+        for (Dispositivo dispositivo : dispositivos) {
+            dispositivosLista.add(dispositivo.getTipo());
+        }
+        
+        System.out.println("Lista Dispositivos");
+        for (String dispositivoTipo : dispositivosLista) {
+            System.out.print(dispositivoTipo + " ");
+        }
+    }
     
     /**
      * 
@@ -72,7 +88,7 @@ class Usuario {
         System.out.println("Lista Dispositivos"); 
         System.out.printf("%-15s %-15s %-10s", "Tipo", "Marca", "Consumo");
         for (int i = 0; i < dispositivosTipo.size(); i++) {
-            System.out.printf("%n%-15s %-15s %-.2f", dispositivosTipo.get(i), dispositivosMarca.get(i), dispositivosConsumo.get(i));
+            System.out.printf("%n%-15s %-15s %.2f", dispositivosTipo.get(i), dispositivosMarca.get(i), dispositivosConsumo.get(i));
         }
 
     }
@@ -106,6 +122,6 @@ class Usuario {
                 break;
         }
         
-        System.out.println("Consumo Mensual: " + totalFinal);
+        System.out.println("\nConsumo Mensual: " + totalFinal);
     }
 }
