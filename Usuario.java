@@ -55,25 +55,6 @@ class Usuario {
     }
 
     public void listaDispositivos() {
-        ArrayList<String> dispositivosLista = new ArrayList<>();
-        for (Dispositivo dispositivo : dispositivos) {
-            dispositivosLista.add(dispositivo.getTipo());
-        }
-        
-        System.out.println("Lista Dispositivos");
-        for (String dispositivoTipo : dispositivosLista) {
-            System.out.print(dispositivoTipo + " ");
-        }
-    }
-    
-    /**
-     * 
-     */
-    public void getInfo() {
-        System.out.println("Nombre: " + this.nombre);
-        System.out.println("email: " + this.email);
-        System.out.println("Empresa: " + this.empresa);
-        
         ArrayList<String> dispositivosTipo = new ArrayList<>();
         ArrayList<String> dispositivosMarca = new ArrayList<>();
         ArrayList<Double> dispositivosConsumo = new ArrayList<>();
@@ -90,6 +71,18 @@ class Usuario {
         for (int i = 0; i < dispositivosTipo.size(); i++) {
             System.out.printf("%n%-15s %-15s %.2f", dispositivosTipo.get(i), dispositivosMarca.get(i), dispositivosConsumo.get(i));
         }
+
+    }
+    
+    /**
+     * 
+     */
+    public void getInfo() {
+        System.out.println("Nombre: " + this.nombre);
+        System.out.println("email: " + this.email);
+        System.out.println("Empresa: " + this.empresa);
+        listaDispositivos();
+        
 
     }
 

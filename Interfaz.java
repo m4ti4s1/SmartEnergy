@@ -13,6 +13,10 @@ public class Interfaz {
         
         user1.listaDispositivos();
         user1.removeDispositivo(TV);
+        System.out.println();
         user1.listaDispositivos();
+
+        System.out.println("\n");
+        user1.getInfo();
     }
 }
