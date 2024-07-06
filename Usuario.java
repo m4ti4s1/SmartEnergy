@@ -2,7 +2,7 @@
 
 
 /* 
-Cosntructor
+Constructor
     nombre
     password
     email
@@ -41,7 +41,9 @@ class Usuario {
         }
     }
     
-
+    public String getNombre() {
+        return this.nombre;
+    }
     /**
      * Metodo para agregar un dispositivo a un usuario
      * @param dispositivo dispositivo
