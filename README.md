@@ -27,4 +27,17 @@ git clone https://github.com/M4ti4s1/SmartEnergy
 java Interfaz
 ```
 
+### Error al encontrar archivo .class o la clase
+> [!TIP]
+> Configura variables de entorno  
+1. Ejecuta el siguiente comando en la terminal  
+``` shell
+pwd
+```
+2. Ejecuta el siguiente comando cambiando /path/to/directory/ con el output anterior
+``` shell
+java -cp /path/to/directory/ Interfaz
+```
+>[!TIP]
+> Para finalizar la ejecucion del programa en cualquier momento o error presionar `Ctlr` + `c`
 # Creadores
