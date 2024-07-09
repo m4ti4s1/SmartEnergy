@@ -49,6 +49,23 @@ class Dispositivo {
     public void cambiarConsumo(double newConsumo) {
         this.consumo = newConsumo;
     }
+
+    public void cambiarMarca(String newMarca) {
+        this.marca = newMarca;
+    }
+
+    public void cambiarModelo(String newModelo) {
+        this.modelo = newModelo;
+    }
+    public void cambiarTipo(String newTipo) {
+        this.tipo = newTipo;
+    }
     
+    public void getInfo() {
+        System.out.println("Tipo: " + this.tipo);
+        System.out.println("Marca: " + this.marca);
+        System.out.println("Modelo: " + this.modelo);
+        System.out.println("Consumo: " + this.consumo);
+    }
     
 }
