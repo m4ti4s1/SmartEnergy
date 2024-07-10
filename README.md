@@ -1,3 +1,5 @@
+> [!IMPORTANT]
+> Sugerencias, reporte de errores y demas a [smartenergybuss@gmail.com](mailto:smartenergybuss@gmail.com)
 # Smart Energy
 
 # Tutorial para usar  
