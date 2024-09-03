@@ -16,10 +16,11 @@ Metodos
     consumo diario, mensual
     
 */
+
 import java.util.Scanner;
 import java.util.ArrayList;
 class Usuario {
-    private ArrayList<Dispositivo>  dispositivos;
+    private ArrayList<src.Dispositivo>  dispositivos;
     private String nombre;
     private String password;
     private String email;
@@ -52,7 +53,7 @@ class Usuario {
 
     public boolean existeDispositivo(String modelo) {
 
-        for (Dispositivo dispositivo : dispositivos) {
+        for (src.Dispositivo dispositivo : dispositivos) {
             if (dispositivo.getModelo().equalsIgnoreCase(modelo)) {
                 return true;
             }
@@ -82,16 +83,16 @@ class Usuario {
      * Metodo para agregar un dispositivo a un usuario
      * @param dispositivo dispositivo
      */
-    public void addDispositivo(Dispositivo dispositivo) {
+    public void addDispositivo(src.Dispositivo dispositivo) {
         dispositivos.add(dispositivo);
     }
 
-    public void removeDispositivo(Dispositivo dispositivo) {
+    public void removeDispositivo(src.Dispositivo dispositivo) {
         dispositivos.remove(dispositivo);
     }
 
     public void removeDispositivoModelo(String modelo) {
-        for (Dispositivo dispositivo : dispositivos) {
+        for (src.Dispositivo dispositivo : dispositivos) {
             if (dispositivo.getModelo().equalsIgnoreCase(modelo)) {
                 removeDispositivo(dispositivo);
             }
@@ -101,7 +102,7 @@ class Usuario {
     public void modificarDispositivo(String modelo) {
         Scanner sc = new Scanner(System.in);
         int opc;
-        for (Dispositivo dispositivo : dispositivos) {
+        for (src.Dispositivo dispositivo : dispositivos) {
             if (dispositivo.getModelo().equalsIgnoreCase(modelo)){
                 do {
                     System.out.println("\n--- Ingresa una opcion ---");
@@ -142,7 +143,7 @@ class Usuario {
         ArrayList<String> dispositivosModelo = new ArrayList<>();
         ArrayList<Double> dispositivosConsumo = new ArrayList<>();
 
-        for (Dispositivo dispositivo : dispositivos) {
+        for (src.Dispositivo dispositivo : dispositivos) {
             dispositivosTipo.add(dispositivo.getTipo());
             dispositivosMarca.add(dispositivo.getMarca());
             dispositivosModelo.add(dispositivo.getModelo());
@@ -178,7 +179,7 @@ class Usuario {
         
         double totalFinal = 0;
         
-        for (Dispositivo dispositivo : dispositivos) {
+        for (src.Dispositivo dispositivo : dispositivos) {
             consumoTotalDispositivos += dispositivo.getConsumo();
         }
 

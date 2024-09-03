@@ -1,4 +1,5 @@
 // Clase para manejar la "aplicacion"
+
 import java.util.Scanner;
 import java.util.ArrayList;
 public class Interfaz {
@@ -38,11 +39,11 @@ public class Interfaz {
         usuarios.add(user1);
         usuarios.add(user2);
 
-        Dispositivo cel1 = new Dispositivo("Celular", "Samsung", "A50", 14);
-        Dispositivo cel2 = new Dispositivo("Celular", "Xiaomi", "X3 Pro", 14);
+        src.Dispositivo cel1 = new src.Dispositivo("Celular", "Samsung", "A50", 14);
+        src.Dispositivo cel2 = new src.Dispositivo("Celular", "Xiaomi", "X3 Pro", 14);
 
-        Dispositivo laptop1 = new Dispositivo("Laptop", "Asus", "Zephyrus", 35);
-        Dispositivo laptop2 = new Dispositivo("Laptop", "HP", "Vector", 35);
+        src.Dispositivo laptop1 = new src.Dispositivo("Laptop", "Asus", "Zephyrus", 35);
+        src.Dispositivo laptop2 = new src.Dispositivo("Laptop", "HP", "Vector", 35);
 
         user1.addDispositivo(cel1);
         user1.addDispositivo(laptop1);
@@ -169,7 +170,7 @@ public class Interfaz {
                                                     }
                                                 } 
 
-                                                Dispositivo newDispositivo = new Dispositivo(tipo, marca, modelo, consumo);
+                                                src.Dispositivo newDispositivo = new src.Dispositivo(tipo, marca, modelo, consumo);
                                                 usuario.addDispositivo(newDispositivo);                                            
 
                                             } else {
@@ -187,7 +188,7 @@ public class Interfaz {
                                             
                                             if (existe) {
                                                 usuario.removeDispositivoModelo(modelo);
-                                                System.out.println("Dispositivo eliminado exitosamente");
+                                                System.out.println("src.Dispositivo eliminado exitosamente");
                                             } else {
                                                 System.out.println("El dispositivo no existe o el modelo esta mal escrito");
                                             }
@@ -211,7 +212,7 @@ public class Interfaz {
                                                 // funcion en bucle con menu interno
                                                 usuario.modificarDispositivo(modelo);;
                                             } else {
-                                                System.out.println("Dispositivo no existe o el modelo esta mal escrito");
+                                                System.out.println("src.Dispositivo no existe o el modelo esta mal escrito");
                                             }
                                             break;
                                         case 7:
