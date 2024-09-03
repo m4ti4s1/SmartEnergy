@@ -2,13 +2,15 @@
 > Sugerencias, reporte de errores y demas a [smartenergybuss@gmail.com](mailto:smartenergybuss@gmail.com)
 # Smart Energy
 
-# Tutorial para usar  
+# Tutorial para Utilizar
 ## Prerequisitos
-- Tener (Java Development Kit) de java instalado  
-- Tener Git instalado
+- Tener (Java Development Kit) 
+- Tener Git 
+- Tener intelliJ
   
 > [!IMPORTANT]
 > Debes cumplir con todos los prerequisitos antes mencionados
+
 
   
 ## Como clonar repositorio
@@ -17,29 +19,14 @@
 ``` shell
 git clone https://github.com/M4ti4s1/SmartEnergy
 ```
+> [!NOTE]
+> Se puede utilizar intelliJ para clonar el repositorio
   
 ## Como ejecutar el programa
 > [!IMPORTANT]
-> Antes de ejecutarlo asegurate de tener todos los archivos .java y .class
-> Cada archivo .java debe tener su correspondiente .class
+> Antes de ejecutarlo Asegurate de que se clono de manera correcta el repositorio
 
-1. Dirigirse a la ruta donde se clono el repositorio anteriormente
-2. En la shell ejecutar el siguiente comando
-``` shell
-java Interfaz
-```
+1. Abrir **intelliJ**
+2. Ejecutar el archivo **interfaz**
 
-### Error al encontrar archivo .class o la clase
-> [!TIP]
-> Configura variables de entorno  
-1. Ejecuta el siguiente comando en la terminal  
-``` shell
-pwd
-```
-2. Ejecuta el siguiente comando cambiando /path/to/directory/ con el output anterior
-``` shell
-java -cp /path/to/directory/ Interfaz
-```
->[!TIP]
-> Para finalizar la ejecucion del programa en cualquier momento o error presionar `Ctlr` + `c`
-# Creadores
+

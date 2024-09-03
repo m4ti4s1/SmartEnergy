@@ -16,11 +16,12 @@ Metodos
     consumo diario, mensual
     
 */
-
+package src;
 import java.util.Scanner;
 import java.util.ArrayList;
+
 class Usuario {
-    private ArrayList<src.Dispositivo>  dispositivos;
+    private ArrayList<Dispositivo>  dispositivos;
     private String nombre;
     private String password;
     private String email;

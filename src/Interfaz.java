@@ -1,5 +1,5 @@
 // Clase para manejar la "aplicacion"
-
+package src;
 import java.util.Scanner;
 import java.util.ArrayList;
 public class Interfaz {
