@@ -4,9 +4,9 @@
 
 # Tutorial para Utilizar
 ## Prerequisitos
-- Tener (Java Development Kit) 
-- Tener Git 
-- Tener intelliJ
+- Tener <a href="https://www.oracle.com/ca-en/java/technologies/downloads/">JDK</a> (Java Development Kit) 
+- Tener <a href="https://git-scm.com/downloads">Git</a>
+- Tener <a href="https://www.jetbrains.com/idea/download/?section=windows">intelliJ</a>
   
 > [!IMPORTANT]
 > Debes cumplir con todos los prerequisitos antes mencionados
